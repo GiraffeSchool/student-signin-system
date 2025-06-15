@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/webhook",
+      "destination": "/api/webhook"
+    },
+    {
+      "source": "/attend",
+      "destination": "/api/attend"
+    },
+    {
+      "source": "/sign",
+      "destination": "/api/sign"
+    }
+  ]
+}
